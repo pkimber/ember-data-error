@@ -1,6 +1,6 @@
 <h2>List of Contacts</h2>
 <ul>
   {{#each @model as |contact|}}
-    <li>{{contact}}</li>
+    <li>{{contact.firstName}}. {{contact.lastName}}</li>
   {{/each}}
 </ul>

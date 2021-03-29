@@ -65,5 +65,8 @@
   },
   "ember": {
     "edition": "octane"
+  },
+  "dependencies": {
+    "ember-django-adapter": "^2.1.1"
   }
 }
