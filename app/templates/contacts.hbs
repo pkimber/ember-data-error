@@ -1,11 +1,13 @@
-{{#if @model.contact}}
-  <h1>Hello.... {{@model.contact.firstName}} {{@model.contact.lastName}}</h1>
-{{/if}}
 <h2>List of Contacts</h2>
-<ul>
-  {{#each @model as |contact|}}
-    <li>{{contact.firstName}}. {{contact.lastName}}</li>
-  {{/each}}
-</ul>
-<Director>
-</Director>
+<p>
+  {{#if @model.contacts.isRunning}}
+    Running...
+  {{else}}
+    <ul>
+      {{#each @model.contacts.value as |contact|}}
+        <li>{{contact.firstName}}. {{contact.lastName}}</li>
+      {{/each}}
+    </ul>
+  {{/if}}
+</p>
+<Director />
