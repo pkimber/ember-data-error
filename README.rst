@@ -6,5 +6,8 @@ Understand Ember data handling...
 For notes, see:
 https://www.kbsoftware.co.uk/docs/dev-ember.html#error-handling
 
-This project uses https://gitlab.com/kb/contact
-(on the ``2292-dramatiq-ember-data-error`` branch)
+This project uses https://gitlab.com/kb/contact:
+
+- on the ``2292-dramatiq-ember-data-error`` branch
+- Comment out ``authentication_classes`` and ``permission_classes`` from
+  ``SoftDeleteViewSet`` (``contact/api.py``).
