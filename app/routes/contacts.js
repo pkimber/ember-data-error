@@ -47,6 +47,7 @@ export default class ContactsRoute extends Route {
   @task *doMoreStuff() {
     try {
       let contacts = yield this.store.findAll("contact", { reload: true })
+      // let contacts = yield this.store.query("contact", { criteria: "e" } )
       return contacts
     } catch(e) {
       console.log("catch, doMoreStuff .....................................")
